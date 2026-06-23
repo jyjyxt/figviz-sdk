@@ -1,0 +1,54 @@
+{
+  "name": "figviz",
+  "version": "0.1.0",
+  "description": "Official SDK + CLI for Figviz — generate labeled science & math diagrams (biology, chemistry, physics, K-12 math) from text.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "figviz": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "figviz",
+    "diagram",
+    "diagram-generator",
+    "science",
+    "math",
+    "education",
+    "ai",
+    "sdk",
+    "cli"
+  ],
+  "license": "MIT",
+  "author": "Figviz <support@figviz.com>",
+  "homepage": "https://figviz.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jyjyxt/figviz-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jyjyxt/figviz-sdk/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
