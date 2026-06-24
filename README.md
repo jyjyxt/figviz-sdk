@@ -25,11 +25,11 @@ Options: `-q/--quality 1k|2k|4k`, `-a/--aspect <ratio>`, `-o/--out <file>`,
 ## SDK
 
 ```bash
-npm install figviz
+npm install @figviz/figviz-sdk
 ```
 
 ```ts
-import { createFigviz } from 'figviz';
+import { createFigviz } from '@figviz/figviz-sdk';
 
 const figviz = createFigviz({ apiKey: process.env.FIGVIZ_API_KEY! });
 
